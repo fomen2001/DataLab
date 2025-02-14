@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Property </title>
+  <link rel="stylesheet" href="../css/style.css" />
+   <link rel="stylesheet" href="../css/style1.css" />
+   <link rel="stylesheet" href="../css/style2.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+ 
+</head>
+<body>
+  <!-- HEADER -->
+   <header>
+      <div class="logo">MARIABLE</div>
+      <button class="menu-toggle" id="menu-toggle">
+        ☰ <!-- Icône burger -->
+      </button>
+      <nav id="nav-menu">
+          <ul>
+              <li><a href="../index.html" class="active">ACCUEIL</a></li>
+              <li><a href="../frontend/rechercher.html">RECHERCHER UN PRESTATAIRE</a></li>
+              <li><a href="../frontend/devenir-partenaire.html">DEVENIR PARTENAIRE</a></li>
+              <li><a href="../frontend/a-propos.html">À PROPOS</a></li>
+          </ul>
+      </nav>
+  </header>
+  <br><br><br><br><br><br>
+<main>
+        <div class="container">
+            <div class="gallery">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <img id="mainImage" src="../assets/images/ly.jpg" alt="Luxury House">
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <br>
+            <div class="thumbnails">
+                <img class="thumb active" src="../assets/images/ly.jpg" onclick="changeImage('../assets/images/ly.jpg')">
+                <img class="thumb" src="../assets/images/pro.jpg" onclick="changeImage('../assets/images/pro.jpg')">
+                <img class="thumb" src="../assets/images/pro.jpg" onclick="changeImage('../assets/images/pro.jpg')">
+                <img class="thumb" src="../assets/images/pro.jpg" onclick="changeImage('../assets/images/pro.jpg')">
+            </div>
+
+            <div class="info">
+                <h2>Haut de France</h2>
+                <p class="rating">⭐ 8/10 <span>37 Reviews</span></p>
+                <p>Write a paragraph that talks about your brand or property here...</p>
+                
+                <h3>Coordonnées :</h3>
+                <ul>
+                    <li>139 Rue des Arts, 59100 Roubaix</li>
+                    <li>+33 3 20 43 91 20</li>
+                    <li><a href="#">Lien vers le site</a></li>
+                </ul>
+                <p class="price">7000$ / Day</p>
+            </div>
+        </div>
+    </main>
+   
+        
+
+  <footer>
+    <p>&copy; 2025 MARIABLE. Tous droits réservés.</p>
+  </footer>
+  
+  <script src="../js/script2.js"></script>
+  
+
+</body>
+</html>
